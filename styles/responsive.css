@@ -1,0 +1,91 @@
+/* ===========================
+   Responsive Styles
+   All media queries consolidated
+   =========================== */
+
+/* Tablet+ : Feature card row layout */
+@media (min-width: 1024px) {
+  .section-header h2 {
+    white-space: nowrap;
+  }
+
+  .feature-card {
+    flex-direction: row;
+    padding: 48px;
+    gap: 64px;
+  }
+
+  .feature-card--reverse {
+    flex-direction: row-reverse;
+  }
+
+  .feature-visual {
+    width: 1px; /* flex-grow handles actual width */
+  }
+
+  .feature-content {
+    width: 1px; /* flex-grow handles actual width */
+  }
+}
+
+@media (max-width: 1024px) {
+  .section-header h2 {
+    white-space: normal;
+  }
+}
+
+/* Tablet : Feature card stacking */
+@media (max-width: 968px) {
+  .feature-card {
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .feature-content {
+    text-align: left;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav-links,
+  .nav-actions a {
+    display: none;
+  }
+
+  .logos-row {
+    gap: 2rem;
+  }
+
+  .partner-logos {
+    bottom: 3rem;
+    padding: 0 1rem;
+    width: 100%;
+  }
+
+  .manifesto-image-wrap {
+    height: 256px;
+  }
+
+  .manifesto-bridge {
+    padding: 80px 0;
+  }
+
+  .tabs-showcase {
+    padding: 60px 0 100px;
+  }
+
+  .cta-title {
+    font-size: 2.5rem;
+  }
+
+  .cta-description {
+    font-size: 1.125rem;
+  }
+
+  .cta-actions {
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+  }
+}
