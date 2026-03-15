@@ -2,7 +2,6 @@
 
 <!-- Logo -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/EMET-FFFFFF?style=for-the-badge&logoColor=white&labelColor=0a0a0a&color=0a0a0a&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTYgNEwyOCAxMFYyMkwxNiAyOEw0IDIyVjEwTDE2IDRaIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJNMTYgMTJWMjBNMTIgMTZIMjAiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9zdmc+">
   <source media="(prefers-color-scheme: light)" srcset="https://img.shields.io/badge/EMET-000000?style=for-the-badge&logoColor=black&labelColor=ffffff&color=ffffff&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTYgNEwyOCAxMFYyMkwxNiAyOEw0IDIyVjEwTDE2IDRaIiBzdHJva2U9ImJsYWNrIiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJNMTYgMTJWMjBNMTIgMTZIMjAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PC9zdmc+">
   <img alt="Emet" height="40">
 </picture>
@@ -20,11 +19,6 @@ An AI companion that remembers. Built for the conversations<br>that matter most 
 [![Jetpack Compose](https://img.shields.io/badge/Jetpack_Compose-UI-4285F4?style=flat-square&logo=jetpackcompose&logoColor=white)](https://developer.android.com/jetpack/compose)
 [![License](https://img.shields.io/badge/License-Private-1a1a1a?style=flat-square)]()
 
-<br>
-
-<img src="public/assets/images/hero.png" alt="Emet Hero" width="720" style="border-radius: 16px;" />
-
-</div>
 
 <br>
 
