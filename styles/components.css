@@ -102,21 +102,47 @@
 
 /* --- Feature Cards --- */
 .feature-card {
-  background: rgba(12, 12, 12, 0.7);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 20px;
+  background: rgba(18, 18, 18, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 32px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   gap: 32px;
-  padding: 32px;
+  padding: 48px;
   align-items: center;
-  margin-bottom: 120px;
+  margin-bottom: 25vh;
   width: 100%;
-  position: relative;
+  position: sticky;
+  top: 100px;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5),
+              0 0 0 1px rgba(255, 255, 255, 0.05);
 }
+
+.feature-card:nth-child(1) { z-index: 1; top: 100px; }
+.feature-card:nth-child(2) { z-index: 2; top: 130px; }
+.feature-card:nth-child(3) { z-index: 3; top: 160px; }
+
+.feature-card:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-4px) scale(1.01);
+}
+
+
+/* Subtle scale effect as you scroll past */
+.feature-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.4) 100%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
 
 .feature-card--reverse {
   flex-direction: column;
@@ -276,6 +302,7 @@
   width: 100%;
   aspect-ratio: 1.70833 / 1;
   position: relative;
+  overflow: hidden;
 }
 
 .card-img {
@@ -283,4 +310,38 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1.05);
 }
+
+.card-img.active {
+  opacity: 1;
+  z-index: 1;
+  transform: scale(1);
+}
+
+.showcase-overlay {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.showcase-overlay span {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  text-transform: uppercase;
+}
+

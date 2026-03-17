@@ -25,29 +25,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Tab switching for showcase section
   const tabLinks = document.querySelectorAll('.tab-link');
-  const showcaseImage = document.getElementById('showcase-main-image');
+  const img1 = document.getElementById('showcase-image-1');
+  const img2 = document.getElementById('showcase-image-2');
+  const label = document.getElementById('showcase-label');
 
-  if (tabLinks.length > 0 && showcaseImage) {
+  if (tabLinks.length > 0 && img1 && img2) {
     tabLinks.forEach(link => {
       link.addEventListener('click', (e) => {
         e.preventDefault();
 
-        // Update active tab
+        // Update active tab button
         tabLinks.forEach(item => item.parentElement.classList.remove('active'));
         link.parentElement.classList.add('active');
 
-        // Crossfade to new image
-        showcaseImage.style.transition = 'opacity 0.3s ease';
-        showcaseImage.style.opacity = '0';
+        const newSrc = link.getAttribute('data-image');
+        const newText = link.textContent.replace(/[👤📖🔄🛡️]\s+/g, '').toUpperCase();
+        
+        // Determine which image is currently active and swap
+        const activeImg = img1.classList.contains('active') ? img1 : img2;
+        const nextImg = activeImg === img1 ? img2 : img1;
 
-        setTimeout(() => {
-          const newSrc = link.getAttribute('data-image');
-          if (newSrc) {
-            showcaseImage.src = newSrc;
-          }
-          showcaseImage.style.opacity = '1';
-        }, 300);
+        if (newSrc && activeImg.src.indexOf(newSrc) === -1) {
+          nextImg.src = newSrc;
+          
+          // Wait for a tiny tick to ensure src is set before transition
+          requestAnimationFrame(() => {
+            activeImg.classList.remove('active');
+            nextImg.classList.add('active');
+            if (label) label.textContent = newText;
+          });
+        }
       });
     });
   }
+
 });
