@@ -233,7 +233,7 @@
 
 /* --- Deep Research Section --- */
 .deep-research {
-  padding: 160px 24px;
+  padding: 160px 24px 80px;
   background: #000;
   color: #fff;
   display: flex;
@@ -254,7 +254,6 @@
   color: var(--white);
   margin-bottom: 24px;
   letter-spacing: -0.01em;
-  white-space: nowrap;
 }
 
 .section-header p {
@@ -270,7 +269,7 @@
   display: flex;
   flex-direction: column;
   gap: 0;
-  padding-bottom: 20vh;
+  padding-bottom: 0;
 }
 
 
@@ -278,13 +277,39 @@
 .manifesto-bridge {
   width: 100%;
   background-color: #000;
-  padding: 0;
+  padding: 100px 0; /* Added more vertical breathing room */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
   overflow: hidden;
+}
+
+.manifesto-quote-spans {
+  text-align: center;
+  max-width: 900px; /* Optimal width for 2-3 lines of cinematic text */
+  margin: 0 auto;
+  font-family: var(--font-serif);
+  font-size: clamp(32px, 3.5vw, 48px);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+  color: rgba(245, 245, 245, 0.15);
+  display: block; /* Back to block for natural text flow */
+}
+
+.manifesto-quote-spans span {
+  display: inline-block;
+  margin-right: 0.25em;
+  transition: color 0.6s cubic-bezier(0.16, 1, 0.3, 1), 
+              opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: color, opacity;
+}
+
+.manifesto-quote-spans span.revealed {
+  color: rgb(245, 245, 245);
+  opacity: 1;
 }
 
 .manifesto-image-wrap {
@@ -331,30 +356,17 @@
   text-align: center;
 }
 
-.manifesto-quote-spans {
-  text-align: center;
-  max-width: 100%;
-  margin: 0;
-  font-family: var(--font-serif);
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: -0.4px;
-  line-height: 52px;
-  color: rgb(245, 245, 245);
-}
-
 .manifesto-quote-spans span {
   display: inline-block;
-  margin-right: 0.3em;
+  margin-right: 0.25em; /* Slightly tighter word spacing */
+  transition: color 0.6s cubic-bezier(0.16, 1, 0.3, 1), 
+              opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: color, opacity;
 }
 
-.fade-in-text {
-  transition: opacity 0.5s linear;
-}
-
-.text-zinc-600 {
-  color: #52525b;
+.manifesto-quote-spans span.revealed {
+  color: rgb(245, 245, 245);
+  opacity: 1;
 }
 
 /* --- Tabs Showcase Section --- */
