@@ -1,0 +1,19 @@
+/* --- Blur Reveal Effect --- */
+.blur-reveal {
+  display: block;
+}
+
+.blur-reveal-char {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(12px);
+  transform: translateY(10px);
+  transition: opacity 0.6s ease, filter 0.6s ease, transform 0.6s ease;
+  will-change: opacity, filter, transform;
+}
+
+.blur-reveal-char.visible {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateY(0px);
+}

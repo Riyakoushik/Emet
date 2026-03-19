@@ -59,38 +59,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Manifesto scroll reveal logic
-  const manifestoSection = document.querySelector('.manifesto-bridge');
-  const manifestoSpans = document.querySelectorAll('.manifesto-quote-spans span');
-
-  if (manifestoSection && manifestoSpans.length > 0) {
-    const handleScrollReveal = () => {
-      const sectionRect = manifestoSection.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-      
-      // Calculate reveal progress based on section position in viewport
-      // Starts revealing when section top is at 85% of viewport
-      // Fully revealed when section top is at 15% of viewport
-      const startReveal = windowHeight * 0.85;
-      const endReveal = windowHeight * 0.15;
-      
-      const totalDistance = startReveal - endReveal;
-      const currentPos = startReveal - sectionRect.top;
-      
-      const progress = Math.max(0, Math.min(1, currentPos / totalDistance));
-      const revealCount = Math.floor(progress * manifestoSpans.length);
-      
-      manifestoSpans.forEach((span, index) => {
-        if (index < revealCount) {
-          span.classList.add('revealed');
-        } else {
-          span.classList.remove('revealed');
-        }
-      });
-    };
-
-    window.addEventListener('scroll', handleScrollReveal);
-    handleScrollReveal(); // Initial check
-  }
-
 });

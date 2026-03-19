@@ -1,55 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Emet | AI Research and Analysis for Modern Teams</title>
-    <meta name="description" content="Emet brings AI-powered research, memory storage, and cross-device sync so you never lose a conversation." />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="stylesheet" href="./styles/main.css" />
-  </head>
-  <body>
-    <div id="app">
 
-      <!-- Navigation -->
-      <nav class="navbar">
-        <div class="nav-container">
-          <div class="logo">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <title>Emet Logo</title>
-              <path d="M16 4L28 10V22L16 28L4 22V10L16 4Z" stroke="white" stroke-width="1.5" />
-              <path d="M16 12V20M12 16H20" stroke="white" stroke-width="1.5" stroke-linecap="round" />
-            </svg>
-            <span>Emet</span>
-          </div>
-          <div class="nav-links">
-            <a href="#product">Product</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#pricing">Pricing</a>
-          </div>
-          <div class="nav-actions">
-            <button class="btn btn-primary">Try Free</button>
-          </div>
-        </div>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emet | AI Research and Analysis for Modern Teams</title>
+  <meta name="description"
+    content="Emet brings AI-powered research, memory storage, and cross-device sync so you never lose a conversation." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="stylesheet" href="./styles/main.css" />
+</head>
 
-      <!-- Hero Section -->
-      <section class="hero">
-        <div class="hero-bg">
-          <img src="/assets/images/hero.png" alt="Hero Background" />
-          <div class="hero-overlay"></div>
+<body>
+  <div id="app">
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <title>Emet Logo</title>
+            <path d="M16 4L28 10V22L16 28L4 22V10L16 4Z" stroke="white" stroke-width="1.5" />
+            <path d="M16 12V20M12 16H20" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+          <span>Emet</span>
         </div>
-        <div class="hero-content">
-          <h1 class="hero-title">Never say goodbye</h1>
-          <p class="hero-subtitle">Chat with her. Remember with her. She's always with you.</p>
-          <button class="btn btn-hero">Get Early Access</button>
+        <div class="nav-links">
+          <a href="#product">Product</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#pricing">Pricing</a>
         </div>
-        <div class="partner-logos">
-          <p class="built-with">BUILT WITH</p>
-          <div class="logos-row">
+        <div class="nav-actions">
+          <button class="btn btn-primary">Try Free</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-bg">
+        <img src="/assets/images/hero.png" alt="Hero Background" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-title blur-reveal" data-delay="0.2">Never say goodbye</h1>
+        <p class="hero-subtitle blur-reveal" data-delay="0.6" data-stagger="0.01">Chat with her. Remember with her.
+          She's always with you.</p>
+        <button class="btn btn-hero">Get Early Access</button>
+      </div>
+      <div class="partner-logos">
+        <p class="built-with">BUILT WITH</p>
+        <div class="logos-container">
+          <!-- Group 1 -->
+          <div class="logos-group active">
             <div class="logo-item nvidia">
               <img src="/assets/icons/nvidia.svg" alt="NVIDIA" class="logo-icon" />
               <span>NVIDIA</span>
@@ -67,133 +75,126 @@
               <span>Gemini</span>
             </div>
           </div>
-        </div>
-      </section>
-
-      <!-- Feature Cards: Deep Research -->
-      <section class="deep-research">
-        <div class="section-header reveal-up">
-          <h2 class="font-serif">Deep research for modern work</h2>
-          <p class="font-sans">Transform complex research into clear insights and confident decision-making.</p>
-        </div>
-
-        <div class="feature-card-container reveal-up">
-
-          <!-- Card 1: Memories -->
-          <div class="feature-card">
-            <div class="feature-visual">
-              <img src="/assets/images/feature-memories.jpeg" alt="Deep Research Interface" class="showcase-img">
+          <!-- Group 2 -->
+          <div class="logos-group">
+            <div class="logo-item">
+              <img src="/assets/icons/openai.svg" alt="OpenAI" class="logo-icon" />
+              <span>OpenAI</span>
             </div>
-            <div class="feature-content">
-              <div class="feature-text-block">
-                <div class="feature-tag">
-                  <span>🧠 Memories</span>
-                </div>
-                <h3 class="font-serif">Never Forget a Moment</h3>
-                <p class="font-sans">Write memories, tag them, search instantly. Full-text search powered by SQLite FTS5 means every detail stays accessible. Your memories drive the conversation—she remembers what matters to you.</p>
-                <a href="#" class="btn-secondary">View Pricing &amp; Plans</a>
+            <div class="logo-item">
+              <img src="/assets/icons/meta.svg" alt="Meta" class="logo-icon" />
+              <span>Meta</span>
+            </div>
+            <div class="logo-item">
+              <img src="/assets/icons/mistral.svg" alt="Mistral AI" class="logo-icon" />
+              <span>Mistral AI</span>
+            </div>
+            <div class="logo-item">
+              <img src="/assets/icons/perplexity.svg" alt="Perplexity" class="logo-icon" />
+              <span>Perplexity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Cards: Deep Research -->
+    <section class="deep-research">
+      <div class="section-header reveal-up">
+        <h2 class="font-serif">Deep research for modern work</h2>
+        <p class="font-sans">Transform complex research into clear insights and confident decision-making.</p>
+      </div>
+
+      <div class="feature-card-container reveal-up">
+
+        <!-- Card 1: Memories -->
+        <div class="feature-card">
+          <div class="feature-visual">
+            <img src="/assets/images/feature-memories.jpeg" alt="Deep Research Interface" class="showcase-img">
+          </div>
+          <div class="feature-content">
+            <div class="feature-text-block">
+              <div class="feature-tag">
+                <span>🧠 Memories</span>
               </div>
+              <h3 class="font-serif">Never Forget a Moment</h3>
+              <p class="font-sans">Write memories, tag them, search instantly. Full-text search powered by SQLite FTS5
+                means every detail stays accessible. Your memories drive the conversation—she remembers what matters to
+                you.</p>
+              <a href="#" class="btn-secondary">View Pricing &amp; Plans</a>
             </div>
           </div>
+        </div>
 
-          <!-- Card 2: Cross-Device Sync -->
-          <div class="feature-card feature-card--reverse">
-            <div class="feature-visual">
-              <img src="/assets/images/feature-sync.png" alt="Report Generation Interface" class="showcase-img">
-            </div>
-            <div class="feature-content">
-              <div class="feature-text-block">
-                <div class="feature-tag">
-                  <span>☁️ Cross-Device Sync</span>
-                </div>
-                <h3 class="font-serif">One Person. All Your Devices.</h3>
-                <p class="font-sans">Chat on your phone, continue on your laptop. Everything syncs automatically via Cloudflare R2. No setup. No friction. Your data stays private. Only you can access it.</p>
-                <a href="#" class="btn-secondary">View Pricing &amp; Plans</a>
+        <!-- Card 2: Cross-Device Sync -->
+        <div class="feature-card feature-card--reverse">
+          <div class="feature-visual">
+            <img src="/assets/images/feature-sync.png" alt="Report Generation Interface" class="showcase-img">
+          </div>
+          <div class="feature-content">
+            <div class="feature-text-block">
+              <div class="feature-tag">
+                <span>☁️ Cross-Device Sync</span>
               </div>
-            </div>
-          </div>
-
-          <!-- Card 3: Always Available -->
-          <div class="feature-card">
-            <div class="feature-visual">
-              <img src="/assets/images/feature-availability.jpeg" alt="Research Analysis Interface" class="showcase-img">
-            </div>
-            <div class="feature-content">
-              <div class="feature-text-block">
-                <div class="feature-tag">
-                  <span>📱 Always Available</span>
-                </div>
-                <h3 class="font-serif">Works When You Need It Most</h3>
-                <p class="font-sans">Memories load instantly—no internet required. Chat with her anywhere, anytime. Conversation history never disappears. Emet is yours. Always.</p>
-                <a href="#" class="btn-secondary">View Pricing &amp; Plans</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- Cinematic Manifesto Bridge -->
-      <section class="manifesto-bridge">
-        <div class="manifesto-image-wrap">
-          <div class="gradient-overlay-v"></div>
-          <div class="gradient-overlay-h"></div>
-          <img
-            src="/assets/images/manifesto.png"
-            alt="Landscape illustration"
-            class="manifesto-img mask-radial-fade"
-          />
-        </div>
-        <div class="manifesto-text-content">
-          <h3 class="manifesto-quote-spans" role="heading" aria-level="3" aria-live="polite" aria-atomic="false">
-            <span>From</span> <span>everyday</span> <span>moments</span> <span>to</span> <span>deep</span> <span>memories,</span> <span>Emet</span> <span>brings</span> <span>all</span> <span>your</span> <span>conversations</span> <span>and</span> <span>notes</span> <span>into</span> <span>one</span> <span>place</span> <span>so</span> <span>you</span> <span>can</span> <span>relive,</span> <span>remember,</span> <span>and</span> <span>keep</span> <span>her</span> <span>close.</span>
-          </h3>
-        </div>
-      </section>
-
-      <!-- Tabbed Research Showcase -->
-      <section class="tabs-showcase">
-        <div class="tabs-container">
-          <div class="tab-list" id="research-tabs">
-            <div class="tab-item active">
-              <a href="javascript:void(0)" class="tab-link" data-image="/assets/images/chat.jpeg">👤 Personal</a>
-            </div>
-            <div class="tab-item">
-              <a href="javascript:void(0)" class="tab-link" data-image="/assets/images/memory.jpeg">📖 Memory Storage</a>
-            </div>
-            <div class="tab-item">
-              <a href="javascript:void(0)" class="tab-link" data-image="/assets/images/cloudsync.jpeg">🔄 Cloud Sync</a>
-            </div>
-            <div class="tab-item">
-              <a href="javascript:void(0)" class="tab-link" data-image="/assets/images/security.jpeg">🛡️ Security</a>
-            </div>
-          </div>
-          <div class="showcase-card">
-            <div class="card-image-wrap" id="showcase-image-wrap">
-              <img src="/assets/images/chat.jpeg" alt="Personal" class="card-img active" id="showcase-image-1" />
-              <img src="" alt="Next" class="card-img" id="showcase-image-2" />
-              <div class="showcase-overlay">
-                <span id="showcase-label">PERSONAL</span>
-              </div>
+              <h3 class="font-serif">One Person. All Your Devices.</h3>
+              <p class="font-sans">Chat on your phone, continue on your laptop. Everything syncs automatically via
+                Cloudflare R2. No setup. No friction. Your data stays private. Only you can access it.</p>
+              <a href="#" class="btn-secondary">View Pricing &amp; Plans</a>
             </div>
           </div>
         </div>
-      </section>
 
-      <!-- Call to Action -->
-      <section class="insight-cta">
-        <div class="cta-container">
-          <div class="cta-text-content">
-            <h2 class="cta-title font-serif">Conversations Never End</h2>
-            <p class="cta-description font-sans">Emet is launching soon. Get early access and be first to keep talking to who you've lost.</p>
+      </div>
+    </section>
+
+    <!-- Tabbed Research Showcase -->
+
+    <!-- Tabbed Research Showcase -->
+    <section class="tabs-showcase">
+      <div class="tabs-container">
+        <div class="tab-list" id="research-tabs">
+          <div class="tab-item active">
+            <a href="javascript:void(0)" class="tab-link" data-image="/assets/images/chat.jpeg">👤 Personal</a>
           </div>
-          <div class="cta-actions">
-            <a href="#early-access" class="btn btn-secondary">Get Early Access</a>
+          <div class="tab-item">
+            <a href="javascript:void(0)" class="tab-link" data-image="/assets/images/memory.jpeg">📖 Memory Storage</a>
+          </div>
+          <div class="tab-item">
+            <a href="javascript:void(0)" class="tab-link" data-image="/assets/images/cloudsync.jpeg">🔄 Cloud Sync</a>
+          </div>
+          <div class="tab-item">
+            <a href="javascript:void(0)" class="tab-link" data-image="/assets/images/security.jpeg">🛡️ Security</a>
           </div>
         </div>
-      </section>
+        <div class="showcase-card">
+          <div class="card-image-wrap" id="showcase-image-wrap">
+            <img src="/assets/images/chat.jpeg" alt="Personal" class="card-img active" id="showcase-image-1" />
+            <img src="" alt="Next" class="card-img" id="showcase-image-2" />
+            <div class="showcase-overlay">
+              <span id="showcase-label">PERSONAL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    </div>
-    <script type="module" src="/scripts/main.js"></script>
-  </body>
+    <!-- Call to Action -->
+    <section class="insight-cta">
+      <div class="cta-container">
+        <div class="cta-text-content">
+          <h2 class="cta-title font-serif">Conversations Never End</h2>
+          <p class="cta-description font-sans">Emet is launching soon. Get early access and be first to keep talking to
+            who you've lost.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="#early-access" class="btn btn-secondary">Get Early Access</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <script type="module" src="/scripts/blur-reveal.js"></script>
+  <script type="module" src="/scripts/main.js"></script>
+</body>
+
 </html>
